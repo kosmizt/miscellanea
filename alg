@@ -4,5 +4,5 @@ def bezout(a, b):
         else:
                 q = a//b
                 r = a%b
-                x, y, g = bezout (b, r)
+                x, y, g = bezout(b, r)
                 return y, x - q*y, g
