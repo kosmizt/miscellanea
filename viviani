@@ -21,7 +21,6 @@ def viviani(ax):
                 'purple', alpha=0.2, lw=1)
 
     curve, = ax.plot(x, y, z, 'k', lw=3)
-
     return curve
 
 def grid(ax):
