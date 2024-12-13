@@ -30,3 +30,12 @@ def elokelly(e1, e2, o1, o2, m, b, j):
 
         if k2 <= 0 or p2 < 0.5:
             print(f"a aposta não é aconselhada")
+
+
+""" afazeres
+melhorar isto aqui. fazer no javascript? quero algo com superficie, nome dos jogadores e os dados
+
+fazer uma calculadora de surebet
+
+https://wvuhpc.github.io/Modern-Fortran/
+https://web.chem.ox.ac.uk/fortran/exercises.html """
