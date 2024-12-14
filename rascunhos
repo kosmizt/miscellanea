@@ -1,0 +1,20 @@
+def digital_root(n):
+    """Calculate the digital root of a number (sum of digits reduced to one digit)."""
+    return n % 9 if n % 9 != 0 or n == 0 else 9
+
+def reduced_pyramid_sum(row):
+    """Builds a number pyramid with reduced sums."""
+    pyramid = [row]  # Keep the entire pyramid for visualization
+    while len(row) > 1:
+        # Calculate the next row by summing adjacent pairs and reducing to a single digit
+        row = [digital_root(row[i] + row[i + 1]) for i in range(len(row) - 1)]
+        pyramid.append(row)
+    return pyramid
+
+# Example usage
+top_row = [3,1,9,6,3,9,5,5, 3,6,7,5,1, 2,1,3,3,5,4,2,1,3,2, 4,1,9,3,6,5,4,5,1]
+pyramid = reduced_pyramid_sum(top_row)
+
+# Print the pyramid
+for row in pyramid:
+    print(" " * (len(pyramid) - len(row)), " ".join(map(str, row)))
