@@ -18,3 +18,7 @@ pyramid = reduced_pyramid_sum(top_row)
 # Print the pyramid
 for row in pyramid:
     print(" " * (len(pyramid) - len(row)), " ".join(map(str, row)))
+
+
+
+#criar um TCR
