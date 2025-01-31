@@ -22,16 +22,4 @@ def bezout(a, b, top_level=True):
 
         return x, y, g
     
-#
-
-from math import factorial
-def pascal(n):
-    """pascal's triangle"""
-    for i in range(n):
-        for j in range(n-i+1):
-            print(end=" ")
-
-        for j in range(i+1):
-            print(factorial(i)//(factorial(j)*factorial(i-j)), end=" ")
-
-        print()
+#tcr
