@@ -77,3 +77,15 @@ def elokelly(e1, e2, o1, o2, m, b, j):
 
         if k2 <= 0 or p2 < 0.5:
             print(f"a aposta não é aconselhada")
+
+import math
+
+def pontos(p, m, t1, t2=None):
+    """calcula (como em um processo de Poisson) a probabilidade que se atinja, no mínimo, um
+    determinado número de pontos para jogos de tempo finito.
+
+    parâmetros:
+    p = média de pontos (para apostas ao vivo, quantos já foram feitos)
+    m = pontos a se atingir
+    t1 = duração do jogo
+    t2 = tempo corrido de jogo"""
