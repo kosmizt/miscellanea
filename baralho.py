@@ -12,7 +12,7 @@ def tarot(n):
                           "a roda da fortuna", "a justiça", "o enforcado", "a morte",
                           "a temperança", "o diabo", "a torre", "a estrela", "a lua", "o sol",
                           "o julgamento", "o mundo"]
-    list2 = ["ás", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "valete", "cavaleiro", "rainha", "rei"]
+    list2 = ["ás", 2, 3, 4, 5, 6, 7, 8, 9, 10, "valete", "cavaleiro", "rainha", "rei"]
 
     deck = set()
 
